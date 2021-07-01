@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+        <!-----------------------------------Links------------------------------------->
+        <script src="https://code.angularjs.org/1.3.2/angular.min.js"></script>
+        <!-----------------------------------Links------------------------------------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+        <div ng-controller="mainController" >
+        Select View: 
+        <select ng-model="employeeView">
+                <option value="employeeTable.html">Table</option>
+                <option value="employeeList.html">List</option>
+        </select>
+        <br/><br/>
+        <div ng-include="employeeView"></div>
+        </div>
+        <script src="app.js" ></script>
+</body>
+</html>

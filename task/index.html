@@ -1,0 +1,118 @@
+
+<style>
+    .container{
+    position: absolute;
+    width: 369px;
+    height: 150px;
+    left: 962px;
+    top: 808px;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+}
+.we-recommend{
+    position: absolute;
+    width: 221px;
+    height: 31px;
+    left: 159px;
+    top: 11px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+.p-tag{
+    position: absolute;
+    width: 218px;
+    height: 35px;
+    left: 161px;
+    top: 32px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.checkbox{
+    position: absolute;
+    width: 73px;
+    height: 15px;
+    left: 182px;
+    top: 109px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333333;
+}
+.checkbox input{
+    position: absolute;
+    width: 15px;
+    height: 17px;
+    bottom: 28px;
+    right: 71px;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.checkbox label{
+    position: absolute;
+    right: 4px;
+    top: -39px;
+}
+.link{
+    position: absolute;
+    width: 202px;
+    height: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2372B9;
+    left: 160px;
+    top: 113px;
+    text-decoration: none;
+}
+
+.image{
+    position: absolute;
+    width: 133px;
+    height: 142px;
+    left: 1px;
+    top: 3px;
+}
+
+
+
+
+</style>
+    <div class="container">
+        <div class="we-recommend">We Recommend</div>
+        <p class="p-tag" >Beautify your Canvas by adding a black frame</p>
+        <div class="checkbox">
+            <input class="inputValue" type="checkbox" name="" id=""> 
+            <label >Add for $20</label>
+        </div>
+        <a class="link" href="View this Canvas with Black Frame">View this Canvas with Black Frame</a>
+        <img class="image" src="./image.png" alt="">
+    </div>
+    <script>
+        let check = document.querySelector(".inputValue");
+        let price = document.querySelector(".money");
+        //    .form-vertical
+        check.addEventListener("click", ()=>{
+            if(check.checked == true){
+                console.log("Checked");
+                price.innerHTML = "$174.99 USD"    
+            }else{
+                console.log("unchecked")
+                price.innerHTML = "$154.99 USD"
+            }
+        })
+    </script>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+        <!-----------------------------------Links------------------------------------->
+        <script src="https://code.angularjs.org/1.3.2/angular.min.js"></script>
+        <!-----------------------------------Links------------------------------------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+        <div ng-controller="mainController" >
+        <table>
+                <tr>
+                    <th>Language</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                    <th>Likes/Dislikes</th>
+                </tr>
+                <tbody>
+                        <tr ng-repeat="technology in technologies">
+                            <td>{{ technology.name }}</td> 
+                            <td>{{ technology.likes }}</td> 
+                            <td>{{ technology.dislikes }}</td> 
+                            <td>
+                                    <input type="button" value="Like" ng-click="incrementLikes(technology)">
+                                    <input type="button" value="Dislike" ng-click="incrementDislikes(technology)">
+                            </td>
+                        </tr>
+                </tbody>
+        </table>
+        </div>
+        <script src="app.js" ></script>
+</body>
+</html>

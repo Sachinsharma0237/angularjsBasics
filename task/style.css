@@ -1,0 +1,87 @@
+.container{
+    position: absolute;
+    width: 369px;
+    height: 150px;
+    left: 962px;
+    top: 808px;
+    background: #FFFFFF;
+    border: 1px solid #BDBDBD;
+    box-sizing: border-box;
+}
+.we-recommend{
+    position: absolute;
+    width: 221px;
+    height: 31px;
+    left: 159px;
+    top: 11px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+.p-tag{
+    position: absolute;
+    width: 218px;
+    height: 35px;
+    left: 161px;
+    top: 32px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+.checkbox{
+    position: absolute;
+    width: 73px;
+    height: 15px;
+    left: 182px;
+    top: 109px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #333333;
+}
+.checkbox input{
+    position: absolute;
+    width: 15px;
+    height: 17px;
+    bottom: 28px;
+    right: 71px;
+    background: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.checkbox label{
+    position: absolute;
+    right: 4px;
+    top: -39px;
+}
+.link{
+    position: absolute;
+    width: 202px;
+    height: 16px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    color: #2372B9;
+    left: 160px;
+    top: 113px;
+    text-decoration: none;
+}
+
+.image{
+    position: absolute;
+    width: 133px;
+    height: 142px;
+    left: 1px;
+    top: 3px;
+}

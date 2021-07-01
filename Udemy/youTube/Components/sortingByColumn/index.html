@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+        <!-----------------------------------Links------------------------------------->
+        <script src="https://code.angularjs.org/1.3.2/angular.min.js"></script>
+        <!-----------------------------------Links------------------------------------->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+        <div ng-controller="mainController" >
+        Rows To Display:<input type="number" step="1" min="0" max="5" ng-model="rowLimit">
+        Order By: <select ng-model="sortColumn">
+                <option value="name">Name ASC</option>
+                <option value="dateOfBirth">DateOfBirth ASC</option>
+                <option value="salary">Salary ASC</option>
+        </select>
+        <table>
+                <thead>
+                   <tr>
+                        <td>Name</td>
+                        <td>Date of Birth</td>
+                        <td>Gender</td>
+                        <td>Salary</td>
+                   </tr>
+                </thead>
+                <tbody>
+                   <tr ng-repeat="employee in employees | limitTo:rowLimit | orderBy:sortColumn">
+                        <td>{{employee.name | uppercase}}</td>
+                        <td>{{employee.dateOfBirth | date:"dd/MM/yyyy"}}</td>
+                        <td>{{employee.gender | lowercase}}</td>
+                        <td>{{employee.salary | number:2}}</td>
+                        <td>{{employee.salary | currency:"₹":1}}</td>
+                   </tr>
+                </tbody>
+        </table>
+        </div>
+        <script src="app.js" ></script>
+</body>
+</html>
